@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width initial-scale=1">
+  <link rel="shorcut icon" href="img/ej-favicon.ico" type="image/x-icon"/>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.com/libraries/normalize/8.0.1/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata|Karma&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.production.css">
+  <title>Edric Jazmin - Contact</title>
+</head>
+
+<body>
+  <!-- logo and navbar -->
+  <header class="page-header">
+    <img id="logo" src="img/edric-jazmin-logo.png" alt="logo" width="200px" height="40px">
+    <nav class="page-header__item">
+      <ul role="menubar" class="navigation-list">
+        <li role="presentation">
+          <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
+        </li>
+        <li role="presentation">
+          <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
+        </li>
+        <li role="presentation">
+          <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
+        </li>
+        <li role="presentation">
+          <a href="contact.html" role="menuitem" class="navigation-list__item--active">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="main-body">
+    <h1>Contact me at:</h1>
+    <div>
+      <a href="tel:+19199460272">Tel +1 919 946 0272</a><br>
+      <a href="mailto:edricjazmin@gmail.com">edricjazmin(at)gmail(dot)com</a><br>
+      <a href="mailto:edricjazmin@gmail.com" target="blank">Contact me</a>
+    </div>
+
+<h1>Got a question? Let me know!</h1>
+    <form action="" method="post" id="contact-form">
+      <label class="standard-label" for="contact-email">E-mail: </label>
+      <input type="email" id="contact-email" required>
+
+      <label class="standard-label" for="contact-tel">Telephone: </label>
+      <input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" id="contact-tel">
+
+      <label class="standard-label" for="contact-message">Message: </label>
+      <textarea required maxlength="480" id="contact-message"></textarea>
+
+      <input class="button" type="submit" value="Submit">
+    </form>
+  </div>
+
+  <footer class="page-footer">
+    <p>Find me on</p>
+    <div class="social-media">
+    <a href="https://github.com/edricjazmin">
+      <img src="img/github.svg" alt="Github logo"></a>
+    <a href="https://twitter.com/eajazmin">
+      <img src ="img/twitter.svg" alt="Twitter logo"></a>
+    <a href="https://linkedin.com/in/edricjazmin">
+      <img src="img/linkedin.svg" alt="LinkedIn logo"></a>
+      <a href="https://www.facebook.com/eajazmin">
+      <img src ="img/facebook.svg" alt="Facebook logo"></a>
+    <a href="https://interviewseries.wixsite.com/biglittlearchitect/edric-jazmin">
+      <img src="img/wix.svg" alt="Wix logo that connects to an interview series title 'Big Little Architect' "></a>
+    </div>
+  </footer>
+  <script src="js/tota11y.min.js"></script>
+</body>
+
+</html>
