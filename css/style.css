@@ -4,11 +4,11 @@
 
 :root {
   --primary-color: gold;
-  --grid-color-first: lightgreen;
-  --grid-color-last: pink;
   --primary-text: black;
   --download-color: skyblue;
   --div-color: lightgray;
+  --grid-color-first: #e6c200;
+  --grid-color-last: #ffdb1a;
 }
 
 body {
@@ -160,11 +160,11 @@ button:focus {
 .grid__item {
   background-color: var(--div-color);
   padding: 12px;
-  transition: 0.3s opacity;
+  transition: 0.4s opacity;
 }
 
 .grid__item:hover {
-  opacity: 0.8;
+  opacity: 0.6;
 }
 
 .grid__item:last-child {
