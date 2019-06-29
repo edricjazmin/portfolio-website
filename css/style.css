@@ -102,8 +102,7 @@ div.profile {
 }
 
 .profile,
-.main-body,
-.work {
+.main-body {
   padding: 0 20px;
   clear: both;
   max-width: 600px;
@@ -111,6 +110,9 @@ div.profile {
 }
 
 .work {
+  padding: 0 20px;
+  clear: both;
+  margin: 0 auto;
   width: 100%;
 }
 
