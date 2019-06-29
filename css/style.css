@@ -3,12 +3,11 @@
 }
 
 :root {
-  --primary-color: gold;
+  --primary-color: #ffd700;
   --primary-text: black;
   --download-color: skyblue;
-  --div-color: lightgray;
-  --grid-color-first: #e6c200;
-  --grid-color-last: #ffdb1a;
+  --box-color: lightgray;
+  --grid-color: #e6c200;
 }
 
 body {
@@ -25,8 +24,10 @@ h1 {
   font-size: 200%;
 }
 
-input, texture, select, button {
-  font-family: system-ui;
+input,
+select,
+button {
+  font-family: system-ui, arial;
 }
 
 footer img {
@@ -53,13 +54,13 @@ footer img {
   width: 100%;
   font-size: 24px;
   text-align: center;
-  padding: 12px 0px 24px;
+  padding: 12px 0 24px;
   margin-top: auto;
   background-color: var(--primary-color);
 }
 
 .grid {
-  margin: 0 0 20px 0;
+  margin: 0 0 20px;
 }
 
 ul {
@@ -103,9 +104,9 @@ div.profile {
 .profile,
 .main-body,
 .work {
-  padding: 0px 20px;
+  padding: 0 20px;
   clear: both;
-  width: 600px;
+  max-width: 600px;
   margin: 0 auto;
 }
 
@@ -114,10 +115,10 @@ div.profile {
 }
 
 .profile img {
-  width: 200px;
+  max-width: 200px;
   float: left;
   border-radius: 50%;
-  margin-right: 40px;
+  margin-right: 20px;
 }
 
 tr th {
@@ -130,12 +131,12 @@ tr th {
 
 a.button {
   background-color: var(--download-color);
+  color: white;
   padding: 6px 12px;
   width: 200px;
   margin: auto;
   margin-bottom: 12px;
   border-radius: 8px;
-  color: white;
   text-decoration: none;
   font-size: 1.2em;
   transition: 0.3s opacity;
@@ -158,7 +159,7 @@ button:focus {
 }
 
 .grid__item {
-  background-color: var(--div-color);
+  background-color: var(--box-color);
   padding: 12px;
   transition: 0.4s opacity;
 }
@@ -170,23 +171,25 @@ button:focus {
 .grid__item:last-child {
   grid-column: 3/3;
   grid-row: 2/4;
-  background-color: var(--grid-color-last);
+  background-color: var(--grid-color);
 }
 
 .grid__item:first-child {
   grid-column: 1/1;
   grid-row: 1/3;
-  background-color: var(--grid-color-first);
+  background-color: var(--grid-color);
 }
 
 @media all and (max-width: 750px) {
   .grid {
     grid-gap: 10px;
   }
+
   .grid__item:last-child {
     grid-column: auto/auto;
     grid-row: auto/auto;
   }
+
   h1 {
     font-size: 22px;
   }
@@ -195,7 +198,7 @@ button:focus {
 @media all and (min-width: 500px) and (max-width: 750px) {
   .grid {
     grid-template-columns: 1fr 1fr;
-    }
+  }
 }
 
 @media all and (max-width: 500px) {
@@ -206,7 +209,8 @@ button:focus {
 
 #contact-form {
   padding: 20px;
-  background-color: var(--div-color);
+  margin-bottom: 20px;
+  background-color: var(--box-color);
   border-radius: 12px;
 }
 
@@ -237,18 +241,24 @@ input.button {
 }
 
 #raleigh-skyline {
-width: 100vh;
-margin: auto;
-margin-bottom: 20px;
+  min-width: 100vh;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+#Layer_1 {
+  min-width: 300px;
 }
 
 @keyframes cloud-color-change {
   0% {
     fill: #cde1e6;
   }
+
   50% {
     fill: #d7e7eb;
   }
+
   100% {
     fill: #ebf3f5;
   }
