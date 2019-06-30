@@ -1,0 +1,3 @@
+linter-htmlhint
+linter-stylelint
+w3c-validation

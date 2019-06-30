@@ -76,6 +76,7 @@ ul a {
   text-decoration: none;
   font-family: monospace;
   font-size: 24px;
+  color: var(--primary-text);
 }
 
 ul a:visited {
@@ -243,13 +244,10 @@ input.button {
 }
 
 #raleigh-skyline {
-  min-width: 100vh;
+  min-width: 50vw;
   margin: auto;
+  margin-top: 20px;
   margin-bottom: 20px;
-}
-
-#Layer_1 {
-  min-width: 300px;
 }
 
 @keyframes cloud-color-change {

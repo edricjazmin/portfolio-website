@@ -1,0 +1,26 @@
+cross-browser testing issues
+
+--- (Windows 10)
+
+IE Edge
+-header links look fuzzy?
+-change header links unvisited color from blue to black
+-add top margin to submit button
+
+---
+
+Safari
+-header height changes per page (add padding or margin?)
+-header font looks too bold
+
+---
+
+Firefox
+svg image size too big (need to resize, add max-width?)
+links on 'work' page are working
+
+---
+
+Chrome
+-svg image looks normal
+-submit button on 'contact' looks a little off-center
